@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- // Define la codificación de caracteres para que soporte acentos y ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- // Hace que la página sea adaptable a móviles -->
+  <title>Anuncios</title> <!-- // Título que aparece en la pestaña del navegador -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <!-- // Enlace a la librería de Supabase (para conexión con base de datos) -->
+
+  <!-- FUENTE GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- // Optimiza la carga de la fuente desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- // Permite la carga cruzada de recursos (requerido por Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet"> <!-- // Fuente personalizada usada en el sitio -->
+
+  <link rel="stylesheet" href="style.css"> <!-- // Conecta el archivo CSS con los estilos de la página -->
+</head>
+
+<body>
+  <header> <!-- // Sección del encabezado -->
+    <div class="header-top"> <!-- // Contenedor del logo y el título -->
+      <a href="index.html"><img src="pantera realista.png" alt="Logo UAM" class="logo"></a> <!-- // Logo con enlace al inicio -->
+      <h1>NEXUS PANTR</h1> <!-- // Título principal del sitio -->
+    </div>
+
+    <nav> <!-- // Barra de navegación principal -->
+      <a href="index.html" class="active">🏠 Inicio</a> <!-- // Enlace a la página de inicio -->
+      <a href="anuncios.html">📢 Anuncios</a> <!-- // Enlace a la página actual (anuncios) -->
+      <a href="social.html">💬 Social</a> <!-- // Enlace a la sección social -->
+      <a href="comercio.html">💸 Comercio</a> <!-- // Enlace a la sección de comercio -->
+    </nav>
+  </header>
+
+  <main> <!-- // Contenido principal de la página -->
+    <h2>Publica un nuevo anuncio</h2> <!-- // Título de la sección -->
+    <form class="form-anuncio"> <!-- // Formulario para crear un nuevo anuncio -->
+      <label>Título:</label> <!-- // Etiqueta para el campo de título -->
+      <input type="text" placeholder="Escribe el título del anuncio" required> <!-- // Campo de texto obligatorio para el título -->
+      <label>Descripción:</label> <!-- // Etiqueta para el campo de descripción -->
+      <textarea placeholder="Escribe los detalles..." required></textarea> <!-- // Área de texto para escribir la descripción del anuncio -->
+      <button type="submit">Publicar</button> <!-- // Botón para enviar el formulario -->
+    </form>
+  </main>
+
+  <p id="frase"></p> <!-- // Párrafo vacío (posiblemente usado por JavaScript para mostrar mensajes dinámicos) -->
+
+  <footer> <!-- // Pie de página -->
+    <p>© 2025 Comunidad UAM Lerma</p> <!-- // Texto de derechos de autor -->
+  </footer>
+
+  <script src="sketch.js"></script> <!-- // Conecta el archivo JavaScript donde está la lógica para enviar los anuncios a la base de datos -->
+</body>
+</html>
