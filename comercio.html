@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- // Define la codificación de caracteres para soportar acentos y caracteres especiales -->
+  <meta charset="UTF-8">
+
+  <!-- // Permite que la página se adapte a diferentes tamaños de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- // Título que aparece en la pestaña del navegador -->
+  <title>Comercio - Comunidad UAM Lerma</title>
+
+  <!-- // Conexión con la librería de Supabase para gestionar base de datos -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- // Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- // Encabezado principal con logo y navegación -->
+  <header>
+    <div class="header-top">
+      <!-- // Logo que redirige al inicio -->
+      <a href="index.html"><img src="pantera realista.png" alt="Logo UAM" class="logo"></a>
+
+      <!-- // Título principal del sitio -->
+      <h1>NEXUS PANTR</h1>
+    </div>
+
+    <!-- // Menú de navegación entre secciones -->
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+      <a href="anuncios.html">📢 Anuncios</a>
+      <a href="social.html">💬 Social</a>
+      <a href="comercio.html" class="active">💸 Comercio</a>
+    </nav>
+  </header>
+
+  <!-- // Contenido principal -->
+  <main>
+    <!-- // Título de la sección de comercio -->
+    <h2>Espacio de Comercio</h2>
+    <p>Publica productos o servicios para intercambiar o vender dentro de la comunidad UAM Lerma.</p>
+
+    <!-- // Formulario para publicar productos -->
+    <section class="form-section">
+      <h3>Publica un producto</h3>
+
+      <!-- // Formulario de publicación -->
+      <form class="form-anuncio">
+        <label>Producto:</label>
+        <input type="text" id="producto" placeholder="Ej. Libros, galletas, ropa..." required>
+
+        <label>Descripción:</label>
+        <textarea id="descripcion" placeholder="Describe tu producto o servicio..." required></textarea>
+
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <!-- // Contenedor donde se mostrarán los productos publicados -->
+    <div id="comercio-feed" class="comercio-feed">
+      <p>Cargando productos...</p>
+    </div>
+  </main>
+
+  <!-- // Pie de página -->
+  <footer>
+    <p>© 2025 Comunidad UAM Lerma</p>
+  </footer>
+
+  <!-- // Archivo JavaScript que maneja la lógica con Supabase -->
+  <script src="sketch.js"></script>
+</body>
+</html>
