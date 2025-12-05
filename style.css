@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #e9e2e2;
+  background-image: url('zompantr.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  width: auto;
+  height: auto;
+  font-size: 4000;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;
+  top: 0.2rem;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  padding: 4px;
+}
+
+header h1 {
+  font-family: "Bitcount Prop Double Ink", system-ui;
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  background: white;
+  color: #4b0082;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  background: rgba(120, 70, 170, 0.85);
+  padding: 1rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: inline-block;
+  margin: 1.5rem auto;
+  font-size: 2rem;
+  color: #f3eaff;
+}
+
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.post {
+  background: rgb(150,120,204);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  margin: 0 0 0.5rem;
+  color: #cecad1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: rgb(150,120,204);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #6a0dad;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background: #4b0082;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.anuncio-card {
+  background: #b186f5;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.anuncio-card:hover {
+  transform: scale(1.02);
+}
+
+.login-box {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #ffffffc7;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00000050;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+}
+
+.feed img,
+.comercio-feed img,
+.post img,
+.anuncio-card img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.conducta-box {
+  background: rgba(120, 70, 170, 0.85);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+  color: #f3eaff;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+}
+
+.conducta-box ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.conducta-box li {
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+}
+
+.conducta-box p {
+  font-size: 1.25rem;
+}
+
