@@ -18,14 +18,17 @@ body {
   width: auto;
   height: auto;
   font-size: 4000;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .logo {
   position: absolute;
   left: 1rem;
   top: 0.2rem;
-  width: 100px;
-  height: 100px;
+  width: 105px;
+  height: 105px;
   object-fit: contain;
   border-radius: 50%;
   background: rgba(255,255,255,0.2);
@@ -212,8 +215,28 @@ footer {
   margin-bottom: 0.8rem;
   font-size: 1.15rem;
 }
+.privacidad-box {
+  background: rgba(120, 70, 170, 0.85);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+  color: #f3eaff;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+}
 
-.conducta-box p {
+.privacidad-box ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.privacidad-box li {
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+}
+.privacidad-box p {
   font-size: 1.25rem;
 }
 
